@@ -9,7 +9,7 @@ To run the experiment with default parameters:
 $ cd src
 $ python main.py
 ```
-You can change the all the parameters in `src/config.py`. To run on different datasets, for example, set `train_filename = "../data/ml-1m/train_users.dat"` to `train_filename = "../data/lastfm/train_users.dat"`. To test on the cold-start setting, for example, set `train_filename = "../data/ml-1m/train_users.dat"` to `train_filename = "../data/ml-1m/train_cold_users.dat"`. 
+This repo serves to repeat all experimental results. You can change all the parameters in `src/config.py`. To run on different datasets, for example, set `train_filename = "../data/ml-1m/train_users.dat"` to `train_filename = "../data/lastfm/train_users.dat"`. To test on the cold-start setting, for example, set `train_filename = "../data/ml-1m/train_users.dat"` to `train_filename = "../data/ml-1m/train_cold_users.dat"`. 
 
 After running the experiments, you will see output like:
 ```
