@@ -1,2 +1,4 @@
-# DDN
-Code and data for Deep Distribution Network
+# Deep Distribution Network
+#### Requirements:
+##### Python 3.6.9
+##### TensorFlow 1.12.0
