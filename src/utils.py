@@ -83,8 +83,10 @@ def F1(pre, rec):
 
 def wasserstein(mean1, cov1, mean2, cov2):
     ret = tf.reduce_sum((mean1 - mean2) * (mean1 - mean2))
-    temp = tf.sqrt(cov1) - tf.sqrt(cov2)
-    ret = ret + tf.reduce_sum(temp * temp)
+
+    temp = cov1 + cov2 - 2 * tf.sqrt((tf.sqrt(cov1) * cov2 * tf.sqrt(cov1)))
+    # temp = tf.sqrt(cov1) - tf.sqrt(cov2)
+    ret = ret + tf.reduce_sum(temp)
     return ret
 
 def test_one_user(x):
